@@ -1,7 +1,9 @@
 h1 {
-	font-family: 'Lato';
-	text-align: center;
-	font-size: 2em;
+	font-family: 'Helvetica';
+	font-weight: lighter;
+	text-align: left;
+	margin-left: 30px;
+	font-size: 60px;
 	
 }
 
@@ -9,14 +11,18 @@ h1 {
 	font-family: 'Helvetica';
 	font-weight: lighter;
 	margin-left: 30px;
+	margin-right: 30px;
+	width: 100%;
+	display: inline-block;
 }
 
 h2 {
-	color: black;
+	color: #4CAF50;
 	font-size:30px;
 	font-family: 'Helvetica';
 	font-weight: lighter;
 	margin-left: 30px;
+	margin-right: 30px;
 }
 
 
@@ -84,4 +90,5 @@ p {
 	font-family: 'Helvetica';
 	font-weight: lighter;
 	margin-left: 30px;
+	margin-right: 30px;
 }
