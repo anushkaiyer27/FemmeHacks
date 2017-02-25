@@ -38,13 +38,13 @@ function process (form)
 		var timesdy = 1;
 		var how = "meal and full glass of water";
 		var sideEf = "side eff";
-	}
+		}
 	
 	
 	//mapLookup(zipcode);
 	var output = "Take to take "+drugname+" with" +how+"! Side effects include: "+ sideeff+
 ". Don't worry too much if you experience these, but contact your doctor if these symptoms persist";
-
+};
 
 
 
@@ -129,13 +129,14 @@ function getSearchResult(results, status) {
 
 function search() {
     var zip=jQuery("#zip").val();
+    console.log(zip);
     // var city=jQuery("#city").val();
     // var state=jQuery("#state").val();
     // var address=jQuery("#address").val();
     jQuery.getJSON("http://maps.googleapis.com/maps/api/geocode/json?address=" + zip, function(data){
         initialize(data.results[0].geometry.location);
     });
-}
+};
 
 
 
@@ -153,7 +154,7 @@ function search() {
 
 
 
-}
+
 /*function mapLookup(zipcode)
 {
 	var xhr = new XMLHttpRequest();
