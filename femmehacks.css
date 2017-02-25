@@ -4,7 +4,6 @@ h1 {
 	text-align: left;
 	margin-left: 30px;
 	font-size: 60px;
-	
 }
 
 .menu{
@@ -15,16 +14,6 @@ h1 {
 	width: 100%;
 	display: inline-block;
 }
-
-h2 {
-	color: #4CAF50;
-	font-size:30px;
-	font-family: 'Helvetica';
-	font-weight: lighter;
-	margin-left: 30px;
-	margin-right: 30px;
-}
-
 
 input[type=text] {
 	width: 100%;
@@ -69,6 +58,15 @@ li a.active {
     background-color: #4CAF50;
 }
 
+h2 {
+	color: #4CAF50;
+	font-size:30px;
+	font-family: 'Helvetica';
+	font-weight: lighter;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
 form {
 	font-size: 20px;
 	font-family: 'Helvetica';
@@ -78,11 +76,12 @@ form {
 
 input[type=submit] {
     padding:5px 15px; 
-    background:#ccc; 
+    background:#d9f3f4; 
     border:0 none;
     cursor:pointer;
     -webkit-border-radius: 5px;
     border-radius: 5px; 
+    width: 100%;
 }
 
 p {
