@@ -12,7 +12,7 @@ h1 {
 }
 
 #header {
-	background-image: url("pinktitle.jpg");
+	background-image: url("pharmacy-background.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -43,14 +43,15 @@ input[type=text] {
 ul {
 	list-style-type: none;
 	text-align: center;
-	padding: 0;
+	padding: 10px;
 	width: 100%;
 	overflow: hidden;
 }
 
 li {
-	margin-left: 50px;
+	margin-left: 75px;
 	margin-right: 50px;
+	margin-bottom: 200px;
     float: left;
 }
 
@@ -119,10 +120,11 @@ li a.active {
 }
 
 h2 {
-	color: #4CAF50;
+	color: /*#4CAF50*/ #00A9D3;
 	font-size:30px;
 	font-family: 'Helvetica';
 	font-weight: lighter;
+	text-align: center;
 	margin-top: 70px;
 	margin-left: 300px;
 	margin-right: 300px;
@@ -138,7 +140,7 @@ form {
 
 input[type=submit] {
     padding:5px 15px; 
-    background:#CBC2C0; 
+    background: #00A9D3; 
     border:0 none;
     cursor:pointer;
     -webkit-border-radius: 5px;
