@@ -29,11 +29,19 @@ ul {
 	padding: 0;
 	margin-left: 30px;
 	width: 60px;
+	overflow: hidden;
+}
+
+li {
+    float: left;
 }
 
 li a {
 	display: block;
 	width: 60px;
+	padding: 8px;
+    background-color: #c9f4fc;
+}
 }
 
 form {
