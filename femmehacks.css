@@ -51,6 +51,7 @@ ul {
 li {
 	margin-left: 50px;
 	margin-right: 50px;
+	margin-top: 200px;
     float: left;
 }
 
@@ -138,7 +139,7 @@ form {
 
 input[type=submit] {
     padding:5px 15px; 
-    background:#CBC2C0; 
+    background: #7dd8a5; 
     border:0 none;
     cursor:pointer;
     -webkit-border-radius: 5px;
