@@ -11,6 +11,10 @@ h1 {
 	text-transform: uppercase;
 }
 
+#map {
+    height: 500px;
+}
+
 #header {
 	background-image: url("pharmacy-background.jpg");
 	background-size: cover;
