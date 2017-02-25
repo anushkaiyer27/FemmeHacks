@@ -45,6 +45,114 @@ function process (form)
 	var output = "Take to take "+drugname+" with" +how+"! Side effects include: "+ sideeff+
 ". Don't worry too much if you experience these, but contact your doctor if these symptoms persist";
 
+
+
+
+var map;
+var service;
+var infowindow;
+
+function initialize(location) {
+  var center1 = new google.maps.LatLng(location.lat, location.lng);
+
+
+  map = new google.maps.Map(document.getElementById('map'), {
+      center: center1,
+      zoom: 10
+    });
+
+
+  var request = {
+    location: center1,
+    radius: '500',
+    query: 'pharmacy'
+  };
+
+
+service = new google.maps.places.PlacesService(map);
+  service.textSearch(request, getSearchResult);
+}
+
+function createMarker(places) {
+  var bounds = new google.maps.LatLngBounds();
+  var placesList = document.getElementById('places');
+
+    for (var i = 0; i < places.length; i++) {
+        var place = places[i];
+        console.log(place);
+        var image = {
+          url: place.icon,
+          size: new google.maps.Size(71, 71),
+          origin: new google.maps.Point(0, 0),
+          anchor: new google.maps.Point(17, 34),
+          scaledSize: new google.maps.Size(25, 25)
+        };
+        
+
+
+        function bindListener(){
+            console.log(this, "bindListener");        
+            var marker = new google.maps.Marker({
+              map: map,
+              icon: image,
+              title: this.name,
+              position: this.geometry.location,
+            });
+
+            marker.place=this;
+            var self = this;
+            marker.infowindow = new google.maps.InfoWindow();
+                 google.maps.event.addListener(marker, 'click', function() {
+                     console.log("abc");
+                     marker.infowindow.setContent('<div><strong>' + self.name + '</strong><br>' + '<br>' + self.formatted_address + '</div>');
+                    marker.infowindow.open(map, this);
+                });
+        }
+
+        bindListener.bind(place)();
+
+
+        placesList.innerHTML += '<li>' + place.name + "- " + place.formatted_address + '</li>';
+
+        bounds.extend(place.geometry.location);
+    }
+  map.fitBounds(bounds);
+}
+
+function getSearchResult(results, status) {
+  if (status == google.maps.places.PlacesServiceStatus.OK) {
+    
+      createMarker(results);
+    
+  }
+}
+
+function search() {
+    var zip=jQuery("#zip").val();
+    // var city=jQuery("#city").val();
+    // var state=jQuery("#state").val();
+    // var address=jQuery("#address").val();
+    jQuery.getJSON("http://maps.googleapis.com/maps/api/geocode/json?address=" + zip, function(data){
+        initialize(data.results[0].geometry.location);
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 /*function mapLookup(zipcode)
 {

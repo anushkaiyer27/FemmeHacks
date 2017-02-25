@@ -13,6 +13,12 @@
 	 
 	 <script type="text/javascript" src="femmehacks.js"></script>
 	 
+	 //linking google api
+	 <link href="main.css" rel="stylesheet"> <!-- // -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaNjAxpHx0-0jtZfLn-WNj5we1asg7zOk&libraries=places,geometry"></script> 
+	 
+	 
 	 
 	</head>
 	
@@ -47,6 +53,15 @@
   </div>
   Zip Code: <br>
   <input type="text" name="zipcode" placeholder="5 Digit Zip Code">
+  
+  
+  <p> Enter your zip code: <input type="text" id="zip"> 
+    <button onclick=search()> Go </button> </p>
+        <div id="map"></div> 
+        <div id="places"></div>
+  
+  
+  
   Phone Number: <br>
   <input type="text" name = "phonenumber" placeholder="10 Digit Phone Number">
   <input type="submit" value="Submit!" onClick="process(this.form)">
