@@ -8,32 +8,35 @@ function process (form)
 	{
 		var timeshr = 0;
 		var timesdy = 1;
+		var how = "water";
 		var side-ef = "spotting,  nausea, headaches, weight gain, mood changes, missed periods";
 	}
 	else if (drugname = "Lipitor" || drugname = "lipitor")
 	{
 		var timeshr = 0;
 		var timesdy = 1;
+		var how = "water";
 		var side-ef = "side eff";
 	}
 	else if (drugname = "lisinopril")
 	{
 		var timeshr = 0;
 		var timesdy = 1;
+		var how = "water";
 		var side-ef = "side eff";
 	}
 	else if (drugname = "Zestril" || "zestril")
 	{
 		var timeshr = 0;
 		var timesdy = 1;
-		var how = "with water"
+		var how = "water"
 		var side-ef = "light headedness, fever, sore throat, high potassium";
 	}
 	else if (drugname = "metformin")
 	{
 		var timeshr = 0;
 		var timesdy = 1;
-		var how = "take with meal and full glass of water";
+		var how = "meal and full glass of water";
 		var side-ef = "side eff";
 	}
 	
@@ -42,7 +45,7 @@ function process (form)
 	
 }
 
-var output = "Take to take "+drugname+"! Side effects include: "+ sideeff+
+var output = "Take to take "+drugname+" with" +how+"! Side effects include: "+ sideeff+
 ". Don't worry too much if you experience these, but contact your doctor if these symptoms persist";
 
 
