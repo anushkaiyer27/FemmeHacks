@@ -1,9 +1,25 @@
 h1 {
 	font-family: 'Helvetica';
 	font-weight: lighter;
-	text-align: left;
+	text-align: center;
+	margin-top: 50px;
 	margin-left: 30px;
-	font-size: 60px;
+	margin-bottom: 40px;
+	padding-top: 50px;
+	font-size: 80px;
+	vertical-align: text-top;
+	text-transform: uppercase;
+}
+
+#header {
+	background-image: url("pinktitle.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	text-align: center;
+	position: relative;
+	cursor: default;
+
 }
 
 .menu{
@@ -26,13 +42,15 @@ input[type=text] {
 
 ul {
 	list-style-type: none;
-	margin: 0;
+	text-align: center;
 	padding: 0;
 	width: 100%;
 	overflow: hidden;
 }
 
 li {
+	margin-left: 50px;
+	margin-right: 50px;
     float: left;
 }
 
@@ -44,7 +62,6 @@ li a {
 
     display: block;
     color: #666;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
@@ -106,20 +123,22 @@ h2 {
 	font-size:30px;
 	font-family: 'Helvetica';
 	font-weight: lighter;
-	margin-left: 30px;
-	margin-right: 30px;
+	margin-top: 70px;
+	margin-left: 300px;
+	margin-right: 300px;
 }
 
 form {
 	font-size: 20px;
 	font-family: 'Helvetica';
 	font-weight: lighter;
-	margin-left: 30px;
+	margin-left: 300px;
+	margin-right: 300px;
 }
 
 input[type=submit] {
     padding:5px 15px; 
-    background:#d9f3f4; 
+    background:#CBC2C0; 
     border:0 none;
     cursor:pointer;
     -webkit-border-radius: 5px;
@@ -131,6 +150,14 @@ p {
 	font-size:15px;
 	font-family: 'Helvetica';
 	font-weight: lighter;
-	margin-left: 30px;
-	margin-right: 30px;
+	margin-left: 300px;
+	margin-right: 300px;
+}
+
+h3 {
+	font-size:15px;
+	font-family: 'Helvetica';
+	font-weight: lighter;
+	margin-left: 300px;
+	margin-right: 300px;
 }
