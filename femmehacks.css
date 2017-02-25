@@ -2,17 +2,17 @@ h1 {
 	font-family: 'Helvetica';
 	font-weight: lighter;
 	text-align: center;
-	margin-top: 100px;
+	margin-top: 50px;
 	margin-left: 30px;
-	margin-bottom: -50px;
+	margin-bottom: 40px;
 	padding-top: 50px;
-	font-size: 60px;
+	font-size: 80px;
 	vertical-align: text-top;
 	text-transform: uppercase;
 }
 
 #header {
-	background-image: url("greybanner.jpg");
+	background-image: url("pinktitle.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -42,7 +42,7 @@ input[type=text] {
 
 ul {
 	list-style-type: none;
-	margin-left: 150px;
+	text-align: center;
 	padding: 0;
 	width: 100%;
 	overflow: hidden;
@@ -62,7 +62,6 @@ li a {
 
     display: block;
     color: #666;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
@@ -139,7 +138,7 @@ form {
 
 input[type=submit] {
     padding:5px 15px; 
-    background:#d9f3f4; 
+    background:#CBC2C0; 
     border:0 none;
     cursor:pointer;
     -webkit-border-radius: 5px;
