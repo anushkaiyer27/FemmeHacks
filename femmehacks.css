@@ -119,7 +119,7 @@ li a.active {
 }
 
 h2 {
-	color: #4CAF50;
+	color: /*#4CAF50*/ #7dd8a5;
 	font-size:30px;
 	font-family: 'Helvetica';
 	font-weight: lighter;
