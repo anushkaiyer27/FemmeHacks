@@ -2,54 +2,51 @@ function process (form)
 {
 	var drugname = form.drugname.value;
 	var zipcode = form.zipcode.value;
-	var phone-number = form.phone-number.value;
+	var phoneNumber = form.phoneNumber.value;
 	
 	if (drugname = "the pill")
 	{
 		var timeshr = 0;
 		var timesdy = 1;
 		var how = "water";
-		var side-ef = "spotting,  nausea, headaches, weight gain, mood changes, missed periods";
+		var sideEf = "spotting,  nausea, headaches, weight gain, mood changes, missed periods";
 	}
-	else if (drugname = "Lipitor" || drugname = "lipitor")
+	else if (drugname == "Lipitor" || drugname == "lipitor")
 	{
 		var timeshr = 0;
 		var timesdy = 1;
 		var how = "water";
-		var side-ef = "side eff";
+		var sideEf = "side eff";
 	}
-	else if (drugname = "lisinopril")
+	else if (drugname == "lisinopril")
 	{
 		var timeshr = 0;
 		var timesdy = 1;
 		var how = "water";
-		var side-ef = "side eff";
+		var sideEf = "side eff";
 	}
-	else if (drugname = "Zestril" || "zestril")
+	else if (drugname == "Zestril" || "zestril")
 	{
 		var timeshr = 0;
 		var timesdy = 1;
 		var how = "water"
-		var side-ef = "light headedness, fever, sore throat, high potassium";
+		var sideEf = "light headedness, fever, sore throat, high potassium";
 	}
-	else if (drugname = "metformin")
+	else if (drugname == "metformin")
 	{
 		var timeshr = 0;
 		var timesdy = 1;
 		var how = "meal and full glass of water";
-		var side-ef = "side eff";
+		var sideEf = "side eff";
 	}
 	
 	
-	mapLookup(zipcode);
-	
-}
-
-var output = "Take to take "+drugname+" with" +how+"! Side effects include: "+ sideeff+
+	//mapLookup(zipcode);
+	var output = "Take to take "+drugname+" with" +how+"! Side effects include: "+ sideeff+
 ". Don't worry too much if you experience these, but contact your doctor if these symptoms persist";
 
-
-function mapLookup(zipcode)
+}
+/*function mapLookup(zipcode)
 {
 	var xhr = new XMLHttpRequest();
 	xhr.open("GET", "website", false);
@@ -78,7 +75,7 @@ function nameLookup (drugname)
 	
 	
 	
-	
+	*/
 	
 	
 	
