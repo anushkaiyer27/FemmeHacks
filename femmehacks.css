@@ -33,7 +33,6 @@ ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	margin-left: 30px;
 	width: 100px;
 	overflow: hidden;
 }
@@ -43,10 +42,25 @@ li {
 }
 
 li a {
-	display: block;
+	/*display: block;
 	width: 100px;
 	padding: 8px;
-    background-color: #c9f4fc;
+    background-color: #ccc; */
+
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
 }
 
 form {
@@ -63,4 +77,11 @@ input[type=submit] {
     cursor:pointer;
     -webkit-border-radius: 5px;
     border-radius: 5px; 
+}
+
+p {
+	font-size:15px;
+	font-family: 'Helvetica';
+	font-weight: lighter;
+	margin-left: 30px;
 }
