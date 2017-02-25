@@ -1,8 +1,21 @@
-h1 {
-	color: purple;
-	font-size:50px;
-	font-family: 'Georgia', serif
+title {
+	font-family: 'helvetica';
 }
+
+h2 {
+	color: black;
+	font-size:50px;
+	font-family: 'helvetica'
+	font-weight: lighter;
+}
+
 #shiny{
 	color = gold;
+}
+
+input[type=text] {
+	width: 100%;
+    padding: 12px 20px;
+    margin: 40px 0;
+    box-sizing: border-box;
 }
