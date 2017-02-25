@@ -1,5 +1,6 @@
 function process (form)
 {
+	alert("got here!");
 	var drugname = form.drugname.value;
 	
 	if (drugname = advil)
