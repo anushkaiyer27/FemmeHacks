@@ -7,18 +7,37 @@ h1 {
 
 h2 {
 	color: black;
-	font-size:50px;
-	font-family: 'Lato'
+	font-size:30px;
+	font-family: 'Helvetica';
 	font-weight: lighter;
+	margin-left: 30px;
 }
 
-#shiny{
-	color = gold;
-}
 
 input[type=text] {
 	width: 100%;
     padding: 12px 20px;
     margin: 40px 0;
     box-sizing: border-box;
+    font-family: 'Helvetica';
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-left: 30px;
+	width: 60px;
+}
+
+li a {
+	display: block;
+	width: 60px;
+}
+
+form {
+	font-size: 20px;
+	font-family: 'Helvetica';
+	font-weight: lighter;
+	margin-left: 30px;
 }
