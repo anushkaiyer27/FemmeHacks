@@ -78,3 +78,10 @@ input[type=submit] {
     -webkit-border-radius: 5px;
     border-radius: 5px; 
 }
+
+p {
+	font-size:15px;
+	font-family: 'Helvetica';
+	font-weight: lighter;
+	margin-left: 30px;
+}
