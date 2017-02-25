@@ -12,7 +12,7 @@ h1 {
 }
 
 #header {
-	background-image: url("pinktitle.jpg");
+	background-image: url("pharmacy-background.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -43,7 +43,7 @@ input[type=text] {
 ul {
 	list-style-type: none;
 	text-align: center;
-	padding: 0;
+	padding: 10px;
 	width: 100%;
 	overflow: hidden;
 }
@@ -51,7 +51,7 @@ ul {
 li {
 	margin-left: 50px;
 	margin-right: 50px;
-	margin-top: 200px;
+	margin-bottom: 200px;
     float: left;
 }
 
@@ -124,6 +124,7 @@ h2 {
 	font-size:30px;
 	font-family: 'Helvetica';
 	font-weight: lighter;
+	text-align: center;
 	margin-top: 70px;
 	margin-left: 300px;
 	margin-right: 300px;
