@@ -1,30 +1,49 @@
 function process (form)
 {
-
 	var drugname = form.drugname.value;
 	var zipcode = form.zipcode.value;
 	var phone-number = form.phone-number.value;
 	
-	if (drugname = "advil")
+	if (drugname = "the pill")
 	{
-		var timeshr = 6;
-		var times day = 0;
-		var side-ef = 
-		alert("Take 1-2 advil every 6 hours until symptoms end");
+		var timeshr = 0;
+		var timesdy = 1;
+		var side-ef = "spotting,  nausea, headaches, weight gain, mood changes, missed periods";
 	}
-	else if (drugname = "benadryl")
+	else if (drugname = "Lipitor" || drugname = "lipitor")
 	{
-		alert ("Take 1 per day until symptoms end");
+		var timeshr = 0;
+		var timesdy = 1;
+		var side-ef = "side eff";
 	}
-	else if 
+	else if (drugname = "lisinopril")
 	{
-		
+		var timeshr = 0;
+		var timesdy = 1;
+		var side-ef = "side eff";
 	}
+	else if (drugname = "Zestril" || "zestril")
+	{
+		var timeshr = 0;
+		var timesdy = 1;
+		var how = "with water"
+		var side-ef = "light headedness, fever, sore throat, high potassium";
+	}
+	else if (drugname = "metformin")
+	{
+		var timeshr = 0;
+		var timesdy = 1;
+		var how = "take with meal and full glass of water";
+		var side-ef = "side eff";
+	}
+	
+	
 	mapLookup(zipcode);
 	
 }
 
-var output = "Take "+name+" every "+ time +". Side effects include: "+ sideeff;
+var output = "Take to take "+drugname+"! Side effects include: "+ sideeff+
+". Don't worry too much if you experience these, but contact your doctor if these symptoms persist";
 
 
 function mapLookup(zipcode)
