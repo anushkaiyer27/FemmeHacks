@@ -129,6 +129,7 @@ function getSearchResult(results, status) {
 
 function search() {
     var zip=jQuery("#zip").val();
+    console.log(zip);
     // var city=jQuery("#city").val();
     // var state=jQuery("#state").val();
     // var address=jQuery("#address").val();
