@@ -1,9 +1,9 @@
-function process (form)
+function process ()
 {
-	var drugname = form.drugname.value;
-	var zipcode = form.zipcode.value;
-	var phoneNumber = form.phoneNumber.value;
-	
+	var drugname = jQuery("#drugname").val();
+	var zipcode = jQuery("#zip").val();
+	var phoneNumber = jQuery("#phone").val();
+	alert("got here!");
 	if (drugname = "the pill")
 	{
 		var timeshr = 0;
@@ -38,12 +38,8 @@ function process (form)
 		var timesdy = 1;
 		var how = "meal and full glass of water";
 		var sideEf = "side eff";
-		}
-	
-	
-	//mapLookup(zipcode);
-	var output = "Take to take "+drugname+" with" +how+"! Side effects include: "+ sideeff+
-". Don't worry too much if you experience these, but contact your doctor if these symptoms persist";
+	}
+	var output = "Time to take "+drugname+" with " +how+"! Side effects include: "+ sideEf+". Don't worry too much if you experience these, but contact your doctor if these symptoms persist";
 
 	alert(output);
 

@@ -28,6 +28,7 @@
 		<h3>Helping you stay on track with your medications</h3>
 		<div class="menu">
 		 	<ul>
+		 	<li><a class = "active" href="#start">Get Started!</a></li>
 		 	<li><a class = "active" href="#about">What is PharmaSafe?</a></li>
 		 	<li><a class = "active" href="#us">About the PharmaSafe Team</a></li>
   			<li><a class = "active" href="#contact">Contact</a></li>
@@ -37,14 +38,14 @@
 		
 		<div id="box1">
 		
-		<h2>Get Started!</h2>
+		<h2 id="start">Get Started!</h2>
 		<div id="icon"></div>
 		
-		 <form name="form" action="javascript:alert" method="get">
+		 <form name="form" action="javascript:alert" method="get" id="form">
    Drug:<br>
-  <input type="text" name="drugname" placeholder="Name of Drug" title ="Name of Drug"/><br>
+  <input type="text" name="drugname" placeholder="Name of Drug" title ="Name of Drug" id="drugname"/><br>
   Prescription Information:<br>
-  <input type="text" name="times-per-day" placeholder="Number of Times Each Day, Number of Times Each Week, etc."><br>
+  <input type="text" name="times-per-day" placeholder="Number of Times Each Day, Number of Times Each Week, etc." id="times"><br>
   <div id="radio">
   AM/PM: <br>
   <input type="radio" name="ampm" value="am">AM<br>
@@ -53,10 +54,13 @@
   Zip Code: <br>
   <input type="text" name="zip" placeholder="5 Digit Zip Code" id="zip" >
   Phone Number: <br>
-  <input type="text" name = "phonenumber" placeholder="10 Digit Phone Number">
+  <input type="text" name = "phonenumber" placeholder="10 Digit Phone Number" id="phone">
   
   
-  <input type="submit" value="Submit!" onClick="search(); process(form)">
+  <input type="submit" value="Submit!" onClick="search(); process()">
+  
+  <h3> Add text notifications</h3>
+  
   	<div id="map"></div> 
     <div id="places"></div>
   
@@ -67,7 +71,7 @@
 
 <div id="about">
 
-<h2> About </h2>
+<h2> What is PharmaSafe? </h2>
 
 <p> By signing up, you will receive text updates when you need to take your medication as well as renewal notifications 
 from your local drug store and information about side effects and directions. Don't worry too much if you are experiencing these
@@ -77,6 +81,8 @@ side effects. These are normal when taking certain pharmaceutical products./p>
 
 
 <div id="us">
+
+<h2> About the PharmaSafe Team </h2>
 <h3> Anushka Iyer </h3>
 <p> Anushka enjoys chocolate popsicles and coding!</p>
 
