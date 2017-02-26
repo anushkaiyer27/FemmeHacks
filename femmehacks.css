@@ -11,6 +11,15 @@ h1 {
 	text-transform: uppercase;
 }
 
+h3{
+	text-align: center;
+}
+
+#places{
+	list-syle-type: none;
+}
+
+
 #map {
     height: 500px;
 }
