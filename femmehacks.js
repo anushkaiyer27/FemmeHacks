@@ -44,6 +44,9 @@ function process (form)
 	//mapLookup(zipcode);
 	var output = "Take to take "+drugname+" with" +how+"! Side effects include: "+ sideeff+
 ". Don't worry too much if you experience these, but contact your doctor if these symptoms persist";
+
+	alert(output);
+
 };
 
 
