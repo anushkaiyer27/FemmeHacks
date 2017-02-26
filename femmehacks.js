@@ -3,7 +3,8 @@ function process ()
 	var drugname = jQuery("#drugname").val();
 	var zipcode = jQuery("#zip").val();
 	var phoneNumber = jQuery("#phone").val();
-	alert("got here!");
+	var ampm = jQuery("#ampm").val();
+	alert("You are now signed up for text message reminders. These reminders will be sent");
 	if (drugname = "the pill")
 	{
 		var timeshr = 0;
