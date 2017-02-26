@@ -76,9 +76,9 @@ ul {
 }
 
 li {
-	margin-left: 75px;
-	margin-right: 50px;
-	margin-bottom: 200px;
+	margin-left: 35px;
+	margin-right: 25px;
+	margin-bottom: 300px;
     float: left;
 }
 
@@ -248,5 +248,5 @@ h3 {
 	font-weight: lighter;
 	margin-left: 300px;
 	margin-right: 300px;
-	margin-bottom: 80px;
+	margin-bottom: 3px;
 }
