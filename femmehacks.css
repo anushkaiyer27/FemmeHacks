@@ -20,6 +20,12 @@ h3{
 
 #places{
 	list-syle-type: none;
+	margin: 20px auto;
+	height: 200px;
+}
+
+#places > li {
+	margin: 5px auto;
 }
 
 /* #box1{

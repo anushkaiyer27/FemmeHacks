@@ -52,7 +52,8 @@ var map;
 var service;
 var infowindow;
 
-function initialize(location) {
+function initialize(location) 
+{
   var center1 = new google.maps.LatLng(location.lat, location.lng);
 
 
@@ -73,11 +74,13 @@ service = new google.maps.places.PlacesService(map);
   service.textSearch(request, getSearchResult);
 }
 
-function createMarker(places) {
+function createMarker(places) 
+{
   var bounds = new google.maps.LatLngBounds();
   var placesList = document.getElementById('places');
 
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < 5; i++) 
+    {
         var place = places[i];
         console.log(place);
         var image = {
@@ -155,7 +158,7 @@ $('#return-to-top').click(function() {      // When arrow is clicked
 });
 };
 
-}
+
 function createHomeMarker(place) {
     var image = {
     url: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
