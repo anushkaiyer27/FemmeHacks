@@ -132,6 +132,13 @@ li a.active {
 		font-size: 0.725em;
 }
 
+#icon {
+	background-image: url("medicon.png");
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-left: 20px;
+}
+
 h2 {
 	color: /*#4CAF50*/ #00A9D3;
 	font-size:30px;
