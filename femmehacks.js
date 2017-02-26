@@ -77,7 +77,7 @@ function createMarker(places) {
   var bounds = new google.maps.LatLngBounds();
   var placesList = document.getElementById('places');
 
-    for (var i = 0; i < places.length; i++) {
+    for (var i = 0; i < 5; i++) {
         var place = places[i];
         console.log(place);
         var image = {
@@ -128,17 +128,45 @@ function getSearchResult(results, status) {
 }
 
 function search() {
-    var zip=jQuery("#zip").val();
-    console.log(zip);
-    // var city=jQuery("#city").val();
-    // var state=jQuery("#state").val();
-    // var address=jQuery("#address").val();
-    jQuery.getJSON("http://maps.googleapis.com/maps/api/geocode/json?address=" + zip, function(data){
-        initialize(data.results[0].geometry.location);
+var zip=jQuery("#zip").val();
+    var city=jQuery("#city").val();
+    var state=jQuery("#state").val();
+    var address=jQuery("#address").val();
+    var i = 0;
+    jQuery.getJSON("http://maps.googleapis.com/maps/api/geocode/json?address=" + address + "," + city + "," + state + " " 
+        + zip + ", USA", function(data){
+            initialize(data.results[0].geometry.location);
+            createHomeMarker(data.results[0].geometry.location);
     });
-};
 
+}
+function createHomeMarker(place) {
+    var image = {
+    url: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+    size: new google.maps.Size(20, 32),
+    origin: new google.maps.Point(0, 0),
+    anchor: new google.maps.Point(0, 32)
+  };
 
+    function bindListener(){
+            var marker = new google.maps.Marker({
+              map: map,
+              icon: image,
+              title: this.name,
+              position: this
+            });
+
+            marker.place=this;
+            var self = this;
+            marker.infowindow = new google.maps.InfoWindow();
+                 google.maps.event.addListener(marker, 'click', function() {
+                     marker.infowindow.setContent('<div><strong>' + self.name + '</strong><br>' + '<br>' + self.formatted_address + '</div>');
+                    marker.infowindow.open(map, this);
+                });
+        }
+
+        bindListener.bind(place)();
+}
 
 
 
